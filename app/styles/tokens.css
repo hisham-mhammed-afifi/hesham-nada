@@ -1,0 +1,32 @@
+:root {
+  /* Palette */
+  --blush:        #f4e4e1;
+  --blush-deep:   #ecd1cc;
+  --ivory:        #fbf6f1;
+  --gold:         #bfa14a;
+  --gold-light:   #f0d27a;
+  --gold-dark:    #8c6f2a;
+  --ink:          #3a2a2a;
+  --muted:        #7a6a6a;
+  --line:         rgba(58, 42, 42, 0.12);
+
+  /* Type */
+  --font-script: 'Great Vibes', cursive;
+  --font-serif:  'Cormorant Garamond', 'Times New Roman', serif;
+
+  /* Spacing scale */
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+  --space-6: 6rem;
+
+  /* Layout */
+  --max-w: 1140px;
+  --radius: 6px;
+  --shadow-soft: 0 12px 40px rgba(58, 42, 42, 0.10);
+
+  /* Motion */
+  --ease: cubic-bezier(.2, .7, .2, 1);
+}
