@@ -32,7 +32,7 @@ export default function Hero() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/couple.jpg"
-              alt=""
+              alt="Hesham and Nada"
               onError={() => setShowCouple(false)}
             />
           </div>
@@ -40,7 +40,7 @@ export default function Hero() {
 
         <motion.div className="hero-rings" aria-hidden="true" {...seq(0)}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/rings.svg" alt="" />
+          <img src="/rings.svg" alt="Wedding rings monogram" />
         </motion.div>
 
         <motion.h1 className="hero-headline" {...seq(1)}>

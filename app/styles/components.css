@@ -395,6 +395,28 @@ body > footer {
 /* ═════════════════════════════════════════
    FOOTER
    ═════════════════════════════════════════ */
+.site-foot__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 1.25rem;
+  margin-block-end: var(--space-3);
+  font-size: .9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.site-foot__nav a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color .2s ease, color .2s ease;
+}
+.site-foot__nav a:hover,
+.site-foot__nav a:focus-visible {
+  color: var(--gold-dark);
+  border-bottom-color: var(--gold-dark);
+}
+
 .site-foot {
   padding: var(--space-4) var(--space-3);
   text-align: center;

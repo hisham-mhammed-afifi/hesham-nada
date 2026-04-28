@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { wedding } from './lib/content';
-import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from './lib/site';
+import { SITE_URL, SITE_NAME, SITE_TITLE, SITE_DESCRIPTION } from './lib/site';
 import './styles/tokens.css';
 import './styles/base.css';
 import './styles/components.css';
@@ -9,7 +9,7 @@ import './styles/animations.css';
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: SITE_NAME,
+    default: SITE_TITLE,
     template: '%s — Hesham & Nada',
   },
   description: SITE_DESCRIPTION,
