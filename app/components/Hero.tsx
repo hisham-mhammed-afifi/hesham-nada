@@ -55,8 +55,9 @@ export default function Hero() {
           Hesham <span className="hero-names__amp">&amp;</span> Nada
         </motion.h2>
 
-        <motion.div
+        <motion.time
           className="hero-date"
+          dateTime={wedding.startISO}
           aria-label="Friday June 12 2026"
           {...seq(4)}
         >
@@ -68,7 +69,7 @@ export default function Hero() {
           </span>
           <span className="hero-date__sep" />
           <span className="hero-date__year">{wedding.year}</span>
-        </motion.div>
+        </motion.time>
 
         <motion.p className="hero-venue" {...seq(5)}>
           {wedding.venueName}

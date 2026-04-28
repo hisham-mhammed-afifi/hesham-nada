@@ -4,6 +4,15 @@ import { motion, useReducedMotion } from 'framer-motion';
 import { schedule } from '../lib/content';
 import SectionTitle from './SectionTitle';
 
+function toIsoDateTime(timeLabel: string): string {
+  const match = timeLabel.match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);
+  if (!match) return '2026-06-12';
+  const [, hStr, mStr, mer] = match;
+  let hour = Number(hStr) % 12;
+  if (mer.toUpperCase() === 'PM') hour += 12;
+  return `2026-06-12T${String(hour).padStart(2, '0')}:${mStr}:00+02:00`;
+}
+
 export default function Schedule() {
   const reduce = useReducedMotion();
 
@@ -24,7 +33,9 @@ export default function Schedule() {
       <ol className="schedule-list">
         {schedule.map((e, i) => (
           <motion.li key={e.name} {...item(i)}>
-            <span className="s-time">{e.time}</span>
+            <time className="s-time" dateTime={toIsoDateTime(e.time)}>
+              {e.time}
+            </time>
             <span>
               <span className="s-name">{e.name}</span>
               {e.note && <span className="s-note">{e.note}</span>}

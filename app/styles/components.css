@@ -257,6 +257,9 @@ body > footer {
    VENUE
    ═════════════════════════════════════════ */
 
+.venue-address-block {
+  font-style: normal;
+}
 .venue-name {
   font-family: var(--font-serif);
   font-size: 1.5rem;

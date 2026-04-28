@@ -8,8 +8,10 @@ export default function Venue() {
       <SectionTitle>The Venue</SectionTitle>
 
       <Reveal>
-        <p className="venue-name">{wedding.venueName}</p>
-        <p className="venue-address">{wedding.venueAddress}</p>
+        <address className="venue-address-block">
+          <p className="venue-name">{wedding.venueName}</p>
+          <p className="venue-address">{wedding.venueAddress}</p>
+        </address>
 
         <div className="venue-map">
           <iframe
