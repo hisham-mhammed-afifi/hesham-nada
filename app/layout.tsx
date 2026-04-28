@@ -34,11 +34,21 @@ export const metadata: Metadata = {
     title: SITE_NAME,
     description: 'Friday, June 12, 2026 — Panorama October Garden, Cairo',
     locale: 'en_US',
+    images: [
+      {
+        url: '/photos/Hesham-Nada.jpg',
+        width: 1240,
+        height: 1748,
+        alt: 'Save the Date — Hesham & Nada, June 12, 2026, Panorama October Garden',
+        type: 'image/jpeg',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: SITE_NAME,
     description: 'Friday, June 12, 2026 — Panorama October Garden, Cairo',
+    images: ['/photos/Hesham-Nada.jpg'],
   },
   robots: {
     index: true,
@@ -70,7 +80,7 @@ const eventLd = {
   endDate: '2026-06-13T01:00:00+02:00',
   eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
   eventStatus: 'https://schema.org/EventScheduled',
-  image: [`${SITE_URL}/opengraph-image`],
+  image: [`${SITE_URL}/photos/Hesham-Nada.jpg`],
   location: {
     '@type': 'Place',
     name: wedding.venueName,
